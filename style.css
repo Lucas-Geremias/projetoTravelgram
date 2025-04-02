@@ -3,50 +3,81 @@
   --background-color: #ffffff;
   --surface-color: #f5f5f5;
   --skeleton-color:#d9d9d9;
-  --shape-transparency: #ffffff;
+  --shape-transparency: #ffffff91;
   --text-color-primary:#313131;
   --text-color-secondary: #6c6c6c;
 }
-body{
+*{
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+
 }
-header{
+body{
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color-secondary);
+  background-color: var(--background-color);
+}
+.bg-surface-color{
   background-color: var(--surface-color);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 32px;
 }
-.items{
+nav{
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: space-between;
+  padding-block: 24px;
+  line-height: 0;
+}
+.container{
+  padding-inline: 32px;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+nav ul{
+  display: flex;
+  gap: 20px;
+  padding-block: 8px;
+  align-items: center;
+  list-style: none;
 }
 a{
   text-decoration: none;
   color: var(--text-color-secondary);
 }
-.container{
-  background-color: var(--surface-color);
+a:hover{
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+header{
+  padding-block: 32px;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+header > .container{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 32px;
-  gap: 344px;
 }
-.about{
+.info{
   display: flex;
-  gap: 32px;
-  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  gap: 16px;
+  width: 280px;
 }
-
-.title h2{
+.info li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.title h1{
   color: var(--text-color-primary);
   font-weight: bolder;
   font-size: 32px;
-  margin: 0;
+  margin-bottom: 8px;
 }
 .title p{
   color: var(--text-color-secondary);
@@ -55,30 +86,17 @@ a{
   font-size: 14px;
   width: 384px;
   height: 120px;
-  margin-top: 8px;
-
 }
-.info{
+main{
   display: flex;
-  flex-direction: column;
-  width: 280px;
+  padding-block: 32px;
 }
-.location{
-  display: flex;
-}
-.countries{
-  display: flex;
-}
-.photos{
-  display: flex;
-}
-.gallery{
+main .container{
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 32px 24px;
 }
-.gallery img{
+main img{
   width: 286px;
   height: 286px;
 }
