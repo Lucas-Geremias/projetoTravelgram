@@ -115,3 +115,51 @@ footer p{
   display: flex;
   gap: 16px;
 }
+
+@media (max-width: 532px) {
+  .esconder{
+    display: none;
+  }
+  .container{
+    justify-content: center;
+  }
+}
+@media (min-width: 533px) and (max-width: 1460px) {
+  .container{
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 532px) {
+  .container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title{
+    text-align: center;
+  }
+  .title h1,p{
+font-size: 1rem;
+  }
+  .title p{
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .info{
+    margin-left: 30px;
+  }
+  
+}
+@media (min-width: 533px) and (min-width: 841px) {
+  header > .container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info{
+    margin-left: 201    px;
+  }
+}
